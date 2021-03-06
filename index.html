@@ -151,7 +151,7 @@
               <heading>Research and Selected Publications</heading>
               <br>
               <br>
-              My research interests are in the intersection of machine learning and control theory, spanning the entire spectrum from theory and foundations, algorithms to real-world dynamical systems such as robotics.
+              My research interests are in the intersection of machine learning and control theory, spanning the entire spectrum from theory and foundations, algorithms, to solve cutting edge problems in real-world dynamical systems such as robotics.
             </td>
           </tr>
         </table>
@@ -186,7 +186,7 @@
                 [<a href="https://us13.campaign-archive.com/?u=67bd06787e84d73db24fb0aa5&id=6d61d65ae0&e=b8f2a6be0d">highlighted by Import AI</a>]
                 <br>
                 <p></p>
-                <p>We present a novel deep-learning-based robust nonlinear controller for stable quadrotor control during landing. Our approach blends together a nominal dynamics model coupled with a DNN that learns the high-order interactions, such as the complex interactions between the ground and multi-rotor airflow. To the best of our knowledge, this is the first DNN-based nonlinear feedback controller with stability guarantees that can utilize arbitrarily large neural nets. 
+                <p>We present a novel deep-learning-based robust nonlinear controller for stable quadrotor control during landing. Our approach blends together a nominal dynamics model coupled with a DNN that learns the high-order interactions, such as the complex interactions between the ground and multi-rotor airflow. To the best of our knowledge, this is the first DNN-based nonlinear feedback controller with stability guarantees that can utilize arbitrarily large neural nets. Compared to a nonlinear baseline controller, our method can land the drone fast and smoothly. 
                 </p>
             </td>
           </tr>
@@ -213,7 +213,7 @@
                 [<a href="https://news.yahoo.com/caltech-drone-swarm-ai-174642584.html">Yahoo news</a>]
                 <br>
                 <p></p>
-                <p>Close-proximity control and planning are challenging due to the complex aerodynamic interaction effects between multirotors. We proposed Neural-Swarm, a non-linear decentralized stable learning-based controller and motion planner for close-proximity flight of heterogeneous multirotor swarms. We employ heterogeneous deep sets to encode multi-vehicle interactions in an index-free manner, enabling better generalization to new formations and varying number of vehicles.</p>
+                <p>Close-proximity control and planning are challenging due to the complex aerodynamic interaction effects between multirotors. We proposed Neural-Swarm, a non-linear decentralized stable learning-based controller and motion planner for close-proximity flight of heterogeneous multirotor swarms. We develop and employ heterogeneous deep sets to encode multi-vehicle interactions in an index-free manner, enabling better generalization to new formations and varying number of vehicles. Neural-Swarm enables close-proximity flight with 24 cm minimum vertical distance for a heterogeneous aerial team with 16 robots (60 cm in prior works).</p>
             </td>
           </tr>
 
@@ -223,13 +223,16 @@
             </td>
             <td style="width:65%;vertical-align:middle">
               <p>
+                <a href="https://arxiv.org/pdf/2103.01932">
                   <papertitle>Neural-Fly: Meta-Learning-Based Robust Adaptive Flight Control under Uncertain Wind Conditions</papertitle>
+                </a>
                 <br>
                 <a href="https://www.linkedin.com/in/mtoc12/">Michael O'Connell</a>, <strong>Guanya Shi</strong>, <a href="https://scholar.google.com/citations?user=1oJrl8IAAAAJ&hl=en">Xichen Shi</a>, <a href="https://scholar.google.com/citations?user=CxAS4SQAAAAJ&hl=en">Kamyar Azizzadenesheli</a>, <a href="http://tensorlab.cms.caltech.edu/users/anima/">Animashree Anandkumar</a>, <a href="http://www.yisongyue.com/">Yisong Yue</a>, <a href="http://aerospacerobotics.caltech.edu/">Soon-Jo Chung</a>
                 <br>
                 ongoing work
                 <br>
-                [<a href="https://youtu.be/tCRUhNj4R04">demo video: a drone flying in Caltech CAST fan wall</a>]
+                [<a href="https://arxiv.org/pdf/2103.01932">perliminary version on arXiv</a>]
+                [<a href="https://youtu.be/tCRUhNj4R04">demo video: a drone in CAST fan wall</a>]
                 <br>
                 <!--<em>Submitted to ICRA 2020</em>-->
                 <!--
@@ -238,7 +241,7 @@
                 <a href="https://drive.google.com/open?id=1no4olzlgqA7kc60b7V2pkXqFjxY2H3Ds">[<strong>pdf</strong>]</a>
                 <br>-->
                 <p></p>
-                <p>Real-time model learning proves challenging for complex dynamical systems. Deep learning has high representation power but is often too slow to update onboard. On the other hand, adaptive control relies on simple linear parameter models can update as fast as the feedback control loop. We propose an online composite adaptation method that treats outputs from a deep  neural network as a set of basis functions capable of representing different wind conditions. Meta-learning techniques are used to optimize the network such that the last layer is fast for adaptation. We validate our approach by flying a drone in an open air wind tunnel under varying wind conditions.</p>
+                <p>Real-time model learning proves challenging for complex dynamical systems. Deep learning has high representation power but is often too slow to update onboard and hard to analyze. On the other hand, adaptive control based on simple linear parameter models can update as fast as the feedback control loop. We propose an online composite adaptation method that treats outputs from a deep neural network as a set of basis functions capable of representing different wind conditions. Meta-learning techniques are used to optimize the network such that the last layer is fast for adaptation. We validate our approach by flying a drone in an open air wind tunnel under varying wind conditions.</p>
             </td>
           </tr>
         </table>
