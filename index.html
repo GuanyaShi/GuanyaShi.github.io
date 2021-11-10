@@ -355,7 +355,7 @@
                 [<a href="https://arxiv.org/abs/2106.10497">arXiv</a>]
                 <br>
                 <p></p>
-                <p>We study predictive control in linear time-varying (LTV) systems, and the costs are time-varying and well-conditioned. At each time step, the controller receives the exact predictions of costs, dynamics, and disturbances for the future <em>k</em> time steps. We show that predictive control achieves a dynamic regret of <em>O</em>(<em>λ<sup>k</sup>T</em>), where <em>λ</em><1 is a positive constant. This is the first dynamic regret bound on the predictive control of LTV systems. We also show that predictive control obtains the first competitive bound for the control of LTV systems: 1+<em>O</em>(<em>λ<sup>k</sup></em>). Our results are derived using a novel proof framework based on a perturbation bound that characterizes how a small change to the system parameters impacts the optimal trajectory.</p>
+                <p>We study predictive control in linear time-varying (LTV) systems, and the costs are also time-varying. At each time step, the controller receives the exact predictions of costs, dynamics, and disturbances for the future <em>k</em> time steps. We show that MPC achieves a dynamic regret of <em>O</em>(<em>λ<sup>k</sup>T</em>), where <em>λ</em><1 is a positive constant. We also show that MPC obtains the first competitive bound for the control of LTV systems: 1+<em>O</em>(<em>λ<sup>k</sup></em>). Our results are derived using a novel proof framework based on a perturbation bound that characterizes how a small change to the system parameters impacts the optimal trajectory.</p>
             </td>
           </tr>
 
@@ -406,8 +406,6 @@
                 <br>
                 <strong>Guanya Shi</strong>, <a href="https://zhuyifengzju.github.io/">Yifeng Zhu</a>, <a href="https://scholar.google.ca/citations?user=zeS5UJEAAAAJ&hl=en">Jonathan Tremblay</a>, <a href="https://research.nvidia.com/person/stan-birchfield">Stan Birchfield</a>, <a href="https://fabioramos.github.io/Home.html">Fabio Ramos</a>, <a href="http://tensorlab.cms.caltech.edu/users/anima/">Animashree Anandkumar</a>, <a href="https://www.cs.utexas.edu/~yukez/">Yuke Zhu</a>
                 <br>
-                Internship project at NVIDIA AI algorithm research group
-                <br>
                 <em>International Conference on Robotics and Automation (ICRA)</em>, 2021
                 <br>
                 [<a href="https://arxiv.org/abs/2011.07748">arXiv</a>]
@@ -416,7 +414,7 @@
                 [<a href="https://developer.nvidia.com/blog/nvidia-research-fast-uncertainty-quantification-for-deep-object-pose-estimation/">Nvidia developer blog</a>]
                 <br>
                 <p></p>
-                <p>Deep learning-based object pose estimators are often unreliable and overconfident especially when the input image is outside the training domain, for instance, with sim2real transfer. Efficient and robust uncertainty quantification (UQ) in pose estimators is critically needed in many robotic tasks. In this work, we propose a simple, efficient, and plug-and-play UQ method for 6-DoF object pose estimation. We ensemble 2-3 pre-trained models with different neural network architectures and/or training data sources, and compute their average pairwise disagreement against one another to obtain the uncertainty quantification. We evaluate the proposed UQ method on three tasks where our uncertainty quantification yields much stronger correlations with pose estimation errors than the baselines. Moreover, in a real robot grasping task, our method increases the grasping success rate from 35% to 90%.</p>
+                <p>Deep learning-based object pose estimators are often unreliable and overconfident especially with sim2real transfer. In this work, we propose a simple, efficient, and plug-and-play UQ method for 6-DoF object pose estimation. We ensemble pre-trained models with different neural network architectures and/or training data sources, and compute their average pairwise disagreement against one another to obtain the uncertainty quantification. Our UQ method yields much stronger correlations with pose estimation errors than the baselines in three tasks. Moreover, in a real robot grasping task, our method increases the grasping success rate from 35% to 90%.</p>
             </td>
           </tr>          
 
@@ -437,7 +435,7 @@
                 [<a href="https://arxiv.org/pdf/1906.05819">arXiv</a>]
                 <br>
                 <p></p>
-                <p>We study the problem of safe learning and exploration in sequential control problems. The goal is to safely collect data samples from operating in an environment, in order to learn to achieve a challenging control goal (e.g., an agile maneuver close to a boundary). A central challenge in this setting is how to quantify uncertainty in order to choose provably-safe actions that allow us to collect informative data and reduce uncertainty, thereby achieving both improved controller safety and optimality. To address this challenge, we present a deep robust regression model that is trained to directly predict the uncertainty bounds for safe exploration. We derive generalization bounds for learning and connect them with safety and stability bounds in control. We demonstrate empirically that our robust regression approach can outperform the conventional Gaussian process (GP) based safe exploration in settings where it is difficult to specify a good GP prior.</p>
+                <p>We study the problem of safe learning and exploration in sequential control problems. The goal is to safely collect data samples from operating in an environment, in order to learn to achieve a challenging control goal (e.g., an agile maneuver close to a boundary). We present a deep robust regression model that is trained to directly predict the uncertainty bounds for safe exploration. We derive generalization bounds for learning under domain shift and connect them with safety and stability bounds in control. Our approach outperforms the conventional Gaussian process (GP) based safe exploration in settings where it is difficult to specify a good GP prior.</p>
             </td>
           </tr>
 
@@ -459,7 +457,7 @@
                 [<a href="https://yashwanthnakka.com/blog/">blog</a>]
                 <br>
                 <p></p>
-                <p>Learning-based control algorithms require data collection with abundant supervision for training. Safe exploration algorithms ensure the safety of this data collection process even when only partial knowledge is available. We present a new approach for optimal motion planning with safe exploration that integrates chance-constrained stochastic optimal control with dynamics learning and feedback control. We derive an iterative convex optimization algorithm that solves an Information-cost Stochastic Nonlinear Optimal Control problem (Info-SNOC). The optimization objective encodes both optimal performance and exploration for learning, and the safety is incorporated as distributionally robust chance constraints. The dynamics are predicted from a robust regression model that is learned from data. We prove the safety of rollout from our exploration method and reduction in uncertainty over epochs, thereby guaranteeing the consistency of our learning method. We demonstrate that our approach has higher success rate in ensuring safety when compared to a deterministic trajectory optimization approach.</p>
+                <p>We present a new approach for optimal motion planning with safe exploration that integrates chance-constrained stochastic optimal control with dynamics learning and feedback control. We derive an iterative convex optimization algorithm that solves an Information-cost Stochastic Nonlinear Optimal Control problem (Info-SNOC). The optimization objective encodes both optimal performance and exploration for learning, and the safety is incorporated as distributionally robust chance constraints. We prove the safety of rollout from our exploration method and reduction in uncertainty over epochs, thereby guaranteeing the consistency of our learning method. Our approach has higher success rate in ensuring safety when compared to a deterministic trajectory optimization approach.</p>
             </td>
           </tr>
           </table>
@@ -557,7 +555,7 @@
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           <tr>
             <td>
-              <heading>Hobbies</heading>
+              <heading>Misc.</heading>
               <p>
                 I love playing basketball, soccer and MOBA games. I am also very interested in photography, hiking, travelling and cooking. Here are some photos taken by me. Feel free to email me if you are interested in these photos.
 <!--                 Representative papers are <span class="highlight">highlighted</span>.
